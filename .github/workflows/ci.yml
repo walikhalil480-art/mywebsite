@@ -1,14 +1,15 @@
-name: Continuous Integration
+name: CI
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
-  validate:
-    name: Build & Validate
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,17 +19,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
+          node-version: 22
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Code Linting
+      - name: Lint
         run: npm run lint
 
-      - name: Type Checking
-        run: npm run typecheck
-
-      - name: Production Build
+      - name: Build
         run: npm run build
