@@ -304,13 +304,15 @@ function Index() {
 
         {/* CERTIFICATIONS SECTION */}
         <Section id="certifications" label="05 / CERTIFICATIONS" title="Certifications">
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {certifications.map((c) => (
               <Reveal key={c.name}>
-                <div className="rounded border border-[#30363D] bg-[#161B22] p-6 transition-colors hover:border-[#58A6FF]/60">
-                  <div className="font-mono text-xs text-[#58A6FF]">Verified Certificate</div>
-                  <h3 className="mt-2 text-lg font-bold text-[#F0F3F6]">{c.name}</h3>
-                  <div className="mt-1 font-mono text-sm text-[#8B949E]">{c.issuer}</div>
+                <div className="flex h-full flex-col justify-between rounded border border-[#30363D] bg-[#161B22] p-6 transition-colors hover:border-[#58A6FF]/60">
+                  <div>
+                    <div className="font-mono text-xs text-[#58A6FF]">Verified Certificate</div>
+                    <h3 className="mt-2 text-lg font-bold text-[#F0F3F6]">{c.name}</h3>
+                  </div>
+                  <div className="mt-4 font-mono text-sm text-[#8B949E]">{c.issuer}</div>
                 </div>
               </Reveal>
             ))}

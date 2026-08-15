@@ -108,9 +108,24 @@ export const experience = {
   ],
 };
 
-export const certifications = [
-  { name: "AWS Cloud Practitioner", issuer: "Coursera" },
-  { name: "Kubernetes for Beginners", issuer: "Coursera" },
+export type Certification = {
+  name: string;
+  issuer: string;
+};
+
+export const certifications: Certification[] = [
+  {
+    name: "Diploma in AWS Solution Architect - Associate",
+    issuer: "Alison",
+  },
+  {
+    name: "Kubernetes Basics for DevOps",
+    issuer: "Coursera",
+  },
+  {
+    name: "AWS Cloud Practitioner Essentials",
+    issuer: "Coursera",
+  },
 ];
 
 export type Project = {
