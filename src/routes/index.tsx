@@ -379,68 +379,6 @@ function Index() {
                         </a>
                       </dd>
                     </div>
-
-                    <div className="py-3.5 grid grid-cols-[5.5rem_1fr] gap-4">
-                      <dt className="font-mono text-xs uppercase tracking-wider text-[#8B949E]">
-                        Phone
-                      </dt>
-                      <dd>
-                        <a
-                          href={`tel:${profile.phone}`}
-                          className="font-mono text-sm text-[#F0F3F6] transition-colors hover:text-[#58A6FF]"
-                        >
-                          {profile.phone}
-                        </a>
-                      </dd>
-                    </div>
-
-                    <div className="py-3.5 grid grid-cols-[5.5rem_1fr] gap-4">
-                      <dt className="font-mono text-xs uppercase tracking-wider text-[#8B949E]">
-                        GitHub
-                      </dt>
-                      <dd>
-                        <a
-                          href={profile.github}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="font-mono text-sm text-[#F0F3F6] transition-colors hover:text-[#58A6FF]"
-                        >
-                          GitHub
-                        </a>
-                      </dd>
-                    </div>
-
-                    <div className="py-3.5 grid grid-cols-[5.5rem_1fr] gap-4">
-                      <dt className="font-mono text-xs uppercase tracking-wider text-[#8B949E]">
-                        LinkedIn
-                      </dt>
-                      <dd>
-                        <a
-                          href={profile.linkedin}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="font-mono text-sm text-[#F0F3F6] transition-colors hover:text-[#58A6FF]"
-                        >
-                          LinkedIn
-                        </a>
-                      </dd>
-                    </div>
-
-                    <div className="py-3.5 grid grid-cols-[5.5rem_1fr] gap-4">
-                      <dt className="font-mono text-xs uppercase tracking-wider text-[#8B949E]">
-                        Portfolio
-                      </dt>
-                      <dd>
-                        <a
-                          href={profile.portfolio}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="font-mono text-sm text-[#F0F3F6] transition-colors hover:text-[#58A6FF]"
-                        >
-                          tijabo.online
-                        </a>
-                      </dd>
-                    </div>
                   </dl>
                 </div>
               </Reveal>
